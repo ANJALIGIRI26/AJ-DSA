@@ -1,0 +1,16 @@
+class Solution {
+public:
+    string gcdOfStrings(string str1, string str2) {
+
+      int m1 = str1.length();
+      int m2 = str2.length();
+
+      if(str1+str2 != str2+str1){
+
+        return "";
+
+      }  
+
+      return str1.substr(0,gcd(m1,m2));
+    }
+};
